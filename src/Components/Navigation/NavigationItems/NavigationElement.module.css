@@ -1,0 +1,54 @@
+.NavigationElement{
+    margin: 10px 0;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    align-items: center;
+}
+
+
+.NavigationElement a{
+    color: brown;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.NavigationElement a:hover,
+.NavigationElement a:active,
+.NavigationElement a.active{
+    color:lightblue;
+}
+
+
+@media (min-width: 500px){
+    .NavigationElement{
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        height: 100%;
+        width:auto;
+        align-items: center;
+    }
+    
+    
+    .NavigationElement a{
+        color: white;
+        text-decoration: none;
+        height: 100%;
+        padding: 16px 10px;
+        border-bottom: 4px solid transparent;
+        box-sizing: border-box;
+        display: block;
+    }
+    
+    .NavigationElement a:hover,
+    .NavigationElement a:active,
+    .NavigationElement a.active{
+        background-color: #8F5C2C;
+        border-bottom: 4px solid #4084C8;
+        color:white;
+    }
+    
+}
