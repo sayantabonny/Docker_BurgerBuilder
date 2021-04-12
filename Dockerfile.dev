@@ -1,0 +1,15 @@
+FROM node:alpine
+
+WORKDIR /src/app
+
+COPY package.json .
+RUN npm update -f
+RUN npm cache clear --force
+RUN npm install npm -g
+RUN npm install
+RUN npm update -f
+COPY ./ ./
+
+
+
+CMD ["npm",  "run", "start"]
